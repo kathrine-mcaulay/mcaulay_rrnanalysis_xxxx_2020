@@ -1,0 +1,64 @@
+Mac version
+
+Using ReadLine,Boost,HDF5,GSL
+mothur v.1.44.3
+Last updated: 10/14/2020
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://forum.mothur.org
+
+Type 'quit()' to exit program
+
+[NOTE]: Setting random seed to 19760620.
+
+Script Mode
+
+
+mothur > align.seqs(fasta=data/raw/rrnDB-5.6_16S_rRNA.fasta, reference=data/references/silva_seed/silva.seed_v138.align, flip=T)
+
+Using 16 processors.
+
+Reading in the data/references/silva_seed/silva.seed_v138.align template sequences...	DONE.
+It took 5 to read  7656 sequences.
+
+Aligning sequences from data/raw/rrnDB-5.6_16S_rRNA.fasta ...
+It took 404 secs to align 77530 sequences.
+
+[WARNING]: 37595 of your sequences generated alignments that eliminated too many bases, a list is provided in data/raw/rrnDB-5.6_16S_rRNA.flip.accnos.
+[NOTE]: 37593 of your sequences were reversed to produce a better alignment.
+
+It took 405 seconds to align 77530 sequences.
+
+Output File Names: 
+data/raw/rrnDB-5.6_16S_rRNA.align
+data/raw/rrnDB-5.6_16S_rRNA.align.report
+data/raw/rrnDB-5.6_16S_rRNA.flip.accnos
+
+
+mothur > quit()
+
+
+It took 415 seconds to run 2 commands from your script.
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Detected 1 [WARNING] messages, please review.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

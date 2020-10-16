@@ -4,9 +4,12 @@
 # Inputs: Name of the file from the archive, without the path
 # Outputs: The appropriate rrnDB file to data/raw
 
-archive=$1
+target=$1
 
-wget -nc -P data/raw https://rrndb.umms.med.umich.edu/static/download/"$archive".zip
-unzip -n -d data/raw data/raw/"$archive".zip
+filename=`echo $target | sed "s/.*\///"`
+path=`echo $target | sed -E "s/(.*\/).*/\1/"`
 
-touch data/raw/"$archive"
+wget -nc -P "$path" https://rrndb.umms.med.umich.edu/static/download/"$filename".zip
+unzip -n -d "$path" "$target".zip
+
+touch "$target"

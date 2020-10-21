@@ -12,4 +12,10 @@ path=`echo $target | sed -E "s/(.*\/).*/\1/"`
 wget -nc -P "$path" https://rrndb.umms.med.umich.edu/static/download/"$filename".zip
 unzip -n -d "$path" "$target".zip
 
-touch "$target"
+if [[ $? = 0 ]]
+then
+  touch "$target"
+else
+  echo "FAIL: There was a problem with the extraction"
+  exit 1
+fi

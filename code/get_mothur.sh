@@ -12,7 +12,7 @@ unzip -d code/ code/Mothur.OSX-10.14.zip
 
 if [[ $? -eq 0 ]]
 then
-  touch $code/mothur/mothur
+  touch code/mothur/mothur
 else
   echo "FAIL: There was a problem with mothur installation"
   exit 1
